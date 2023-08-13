@@ -27,11 +27,19 @@ function App() {
 
   return (
     <div className="wrapper">
+      <Router> 
       <Nav />
+
+      
+      <Routes> 
       <Home employees={employees} owners={owners} pets={pets} />
       <StaffList employees={employees} />
       <PetsList pets={pets} />
+      </Routes> 
+       
+
       <Footer />
+      </Router>
     </div>
   );
 }
