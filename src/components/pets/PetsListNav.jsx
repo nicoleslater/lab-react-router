@@ -5,7 +5,7 @@ export const PetsListNav = ({ cats, dogs }) => {
   return (
     <nav className="pets-nav">
       <ul>
-        <Link to={"/pets/cats"} >
+        <Link to={"/pets/cats"} element="cats" >
         <li>
           <a href="/pets/cats">See All Cats ({cats.length})</a>
         </li>
